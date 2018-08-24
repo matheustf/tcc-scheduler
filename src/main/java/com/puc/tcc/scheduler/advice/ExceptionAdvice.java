@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.puc.tcc.scheduler.dtos.BaseDTO;
+import com.puc.tcc.scheduler.exceptions.BaseDTO;
 import com.puc.tcc.scheduler.exceptions.SchedulerException;
 
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.puc.tcc.scheduler.dtos;
+package com.puc.tcc.scheduler.exceptions;
 
 import java.time.LocalDateTime;
 
