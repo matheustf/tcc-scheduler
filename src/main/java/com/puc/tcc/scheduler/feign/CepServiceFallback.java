@@ -1,4 +1,4 @@
-package com.puc.tcc.scheduler.controller;
+package com.puc.tcc.scheduler.feign;
 
 import org.springframework.stereotype.Component;
 

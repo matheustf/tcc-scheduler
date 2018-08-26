@@ -30,6 +30,9 @@ public class Entrega implements Serializable{
 	
 	@NotNull
 	private String codigoDaEntrega;
+	
+	@NotNull
+	private String codigoDeRastreio;
 
 	@NotNull
 	private String idCliente;
@@ -38,7 +41,7 @@ public class Entrega implements Serializable{
 	private String idFornecedor;
 	
 	@NotNull
-	private String idPedido;
+	private String idCompra;
 	
 	@NotNull
 	private String estimativaDeEntrega;

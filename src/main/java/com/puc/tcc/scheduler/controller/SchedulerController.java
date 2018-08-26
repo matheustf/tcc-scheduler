@@ -24,9 +24,9 @@ import com.puc.tcc.scheduler.service.EntregaService;
 @RequestMapping("")
 public class SchedulerController {
 
-	// public String cron = "0 */1 * * * *"; //1m
+	public String cron = "0 */1 * * * *"; //1m
 
-	public String cron = "0/5 */1 * * * *"; // 5s
+	// public String cron = "0/5 */1 * * * *"; // 5s
 
 	@Autowired
 	private TaskScheduler task;

@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.puc.tcc.scheduler.feign.Cep;
+import com.puc.tcc.scheduler.feign.CepService;
+
 import lombok.AllArgsConstructor;
  
 @RestController
