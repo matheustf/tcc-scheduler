@@ -8,13 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
-import com.amazonaws.auth.presign.PresignerParams.Builder;
 import com.puc.tcc.scheduler.feign.CheckFeignDTO;
 import com.puc.tcc.scheduler.feign.MaintainerService;
 import com.puc.tcc.scheduler.model.Entrega;
 import com.puc.tcc.scheduler.repository.EntregaRepository;
-
-import antlr.Utils;
 
 @Service
 public class EntregaServiceImpl implements EntregaService {
