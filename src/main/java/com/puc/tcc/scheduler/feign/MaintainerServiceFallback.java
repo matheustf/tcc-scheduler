@@ -10,6 +10,7 @@ public class MaintainerServiceFallback implements MaintainerService {
 
 	@Override
 	public String checarEntrega(CheckFeignDTO check) {
+		System.out.println("Fallback");
 		return ""; // TODO
 	}
 }

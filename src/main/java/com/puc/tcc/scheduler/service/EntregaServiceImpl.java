@@ -27,9 +27,11 @@ public class EntregaServiceImpl implements EntregaService {
 
 	@Override
 	public void atualizarEntregas() {
+		System.out.println("Buscando Entregas");
 
-		List<Entrega> entregas = (List<Entrega>) entregaRepository.findAll();
+		List<Entrega> entregas = (List<Entrega>) entregaRepository.findEntregas();
 		for (Entrega entrega : entregas) {
+			System.out.println(entrega.getCodigoDaEntrega());
 			if (StringUtils.isNotBlank(entrega.getCodigoDeRastreio())) {
 				System.out.println(entrega.getCodigoDaEntrega());
 				CheckFeignDTO check = CheckFeignDTO

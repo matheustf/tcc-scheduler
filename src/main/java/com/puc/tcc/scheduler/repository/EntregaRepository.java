@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.puc.tcc.scheduler.model.Entrega;
@@ -13,5 +14,8 @@ import com.puc.tcc.scheduler.model.Entrega;
 public interface EntregaRepository extends MongoRepository<Entrega, String> {
 
 	Optional<List<Entrega>> findByIdCliente(String idCliente);
+	
+	@Query("{'historicoDeEntrega.statusDaEntrega' : {$ne : 'ENTREGUE'}}")
+	List<Entrega> findEntregas();
 
 }
