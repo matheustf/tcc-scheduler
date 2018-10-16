@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(value = "microservice-deliverymaintainer", fallback = MaintainerServiceFallback.class)
+@FeignClient(value = "microservice-entrega", fallback = MaintainerServiceFallback.class)
 public interface MaintainerService {
 
 	@RequestMapping(value = "/checarEntrega", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)

@@ -38,6 +38,12 @@ public class Entrega implements Serializable{
 	private String idCliente;
 	
 	@NotNull
+	private String nomeDoCliente;
+	
+	@NotNull
+	private String emailCliente;
+	
+	@NotNull
 	private String idFornecedor;
 	
 	@NotNull
